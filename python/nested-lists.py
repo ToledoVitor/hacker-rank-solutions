@@ -46,7 +46,12 @@ input_test_case_2 = [
 ]
 assert get_second_lowest_grade(input_test_case_2) == ["Tina"]
 
-input_test_case_3 = [["Rachel", -50], ["Mawer", -50], ["Sheen", -50], ["Shaheen", 51]]
+input_test_case_3 = [
+  ["Rachel", -50],
+  ["Mawer", -50],
+  ["Sheen", -50],
+  ["Shaheen", 51]
+]
 assert get_second_lowest_grade(input_test_case_3) == ["Shaheen"]
 
 input_test_case_4 = [
