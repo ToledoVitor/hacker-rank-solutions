@@ -1,8 +1,17 @@
 from collections import defaultdict
 
 
-def get_second_lowest_grade(students_input):
-    # https://www.hackerrank.com/challenges/nested-list/problem
+def get_second_lowest_grade(students_input: list[str, int]) -> list[str]:
+    """
+    https://www.hackerrank.com/challenges/nested-list/problem
+
+    Given a list of students names and grades, find all the students,
+    ordered alphabetically, that have the second lowest grade
+    e.g.:
+        students_input: ['Bob', 9], ['Jhon', 2], ['Mark', 4], ['Isaac', 4]]
+        return ['Isaac', 'Jhon']
+    """
+
     lowest_grade = None
     second_low = None
     students = defaultdict(list)
@@ -47,10 +56,10 @@ input_test_case_2 = [
 assert get_second_lowest_grade(input_test_case_2) == ["Tina"]
 
 input_test_case_3 = [
-  ["Rachel", -50],
-  ["Mawer", -50],
-  ["Sheen", -50],
-  ["Shaheen", 51]
+    ["Rachel", -50],
+    ["Mawer", -50],
+    ["Sheen", -50],
+    ["Shaheen", 51]
 ]
 assert get_second_lowest_grade(input_test_case_3) == ["Shaheen"]
 
