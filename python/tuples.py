@@ -18,5 +18,5 @@ def hash_tuples(integer_list: list[int], number_of_elements: int) -> int:
 input_test_case_1 = ([1, 2], 2)
 assert hash_tuples(input_test_case_1[0], input_test_case_1[1]) == -3550055125485641917
 
-input_test_case_1 = ([2,3,4,5], 4)
-assert hash_tuples(input_test_case_1[0], input_test_case_1[1]) == 7852972215226871095
+input_test_case_2 = ([2,3,4,5], 4)
+assert hash_tuples(input_test_case_2[0], input_test_case_2[1]) == 7852972215226871095
